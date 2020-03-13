@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { theme } from "../../utils/theme"
 
 export const HeaderLayout = styled.header`
   background: transparent;
@@ -11,5 +12,5 @@ export const HeaderLayout = styled.header`
 `
 
 export const NavLink = styled(Link)`
-  color: orange;
+  color: ${props => theme[props.theme].primarycolor};
 `

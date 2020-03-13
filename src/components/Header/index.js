@@ -13,13 +13,18 @@ const Header = () => {
   return (
     <HeaderLayout>
       <div>
-        <NavLink to="/">HOME</NavLink>
+        <NavLink theme={state.theme} to="/">
+          HOME
+        </NavLink>
       </div>
       <div>
         <Link to="/blog">blog</Link>
         <Link to="/resumes">resumes</Link>
       </div>
-      <button>Switch theme</button>
+      {state.theme}
+      <button onClick={() => dispatch({ type: "TOGGLE_THEME" })}>
+        Switch theme
+      </button>
     </HeaderLayout>
   )
 }
