@@ -4,15 +4,21 @@ export const GlobalStateContext = React.createContext()
 export const GlobalDispatchContext = React.createContext()
 
 const initialState = {
-  theme: "light",
+  language: "pt",
 }
 
 function reducer(state, action) {
   switch (action.type) {
-    case "TOGGLE_THEME": {
+    case "CHANGE_LANGUAGE_PT": {
       return {
         ...state,
-        theme: state.theme === "light" ? "dark" : "light",
+        language: "pt",
+      }
+    }
+    case "CHANGE_LANGUAGE_EN": {
+      return {
+        ...state,
+        language: "en",
       }
     }
     default:
