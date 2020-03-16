@@ -13,6 +13,7 @@ import {
   MenuOptions,
   NavLink,
 } from "./style.js"
+import { textsMultiLanguage } from "../../utils/language"
 
 const Header = () => {
   const dispatch = useContext(GlobalDispatchContext)
@@ -24,15 +25,15 @@ const Header = () => {
         <Logo />
       </LogoLink>
       <MenuOptions>
-        <NavLink activeClassName="active" to="/">
-          home
-        </NavLink>
-        <NavLink activeClassName="active" to="/blog">
-          blog
-        </NavLink>
-        <NavLink activeClassName="active" to="/resumes">
-          resumes
-        </NavLink>
+        {textsMultiLanguage[state.language].menuBar.map(menuOption => (
+          <NavLink
+            activeClassName="active"
+            to={menuOption.path}
+            key={menuOption.path}
+          >
+            {menuOption.label}
+          </NavLink>
+        ))}
         <LanguageWrapper
           activate={state.language === "pt"}
           onClick={() => dispatch({ type: "CHANGE_LANGUAGE_PT" })}

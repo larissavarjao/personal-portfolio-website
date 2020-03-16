@@ -8,10 +8,15 @@ export const HeaderLayout = styled.header`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  min-height: 64px;
+  width: 100vw;
 
-  ${media.greaterThan("medium")`
+  ${media.greaterThan("large")`
     padding: 1rem 2rem;
     justify-content: space-between;
+    width: calc(100vw - 4rem);
   `}
 `
 
