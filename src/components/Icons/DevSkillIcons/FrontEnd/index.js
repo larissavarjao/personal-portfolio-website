@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { DevWrapper } from "../FrontEnd/style"
+import { DevWrapper } from "../style"
 
-const BusinessIcon = () => {
+const FrontEndIcon = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "business.png" }) {
+      placeholderImage: file(relativePath: { eq: "frontend.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -18,4 +18,4 @@ const BusinessIcon = () => {
   return <DevWrapper fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default BusinessIcon
+export default FrontEndIcon

@@ -2,9 +2,9 @@ import React, { useContext } from "react"
 import { GlobalStateContext } from "../../context/GlobalContextProvider"
 import { textsMultiLanguage } from "../../utils/language"
 import { Block, DevSkillsWrapper, Skill } from "./style"
-import FrontEndIcon from "../Icons/FrontEnd"
-import BackEndIcon from "../Icons/BackEnd"
-import BusinessIcon from "../Icons/Business"
+import FrontEndIcon from "../Icons/DevSkillIcons/FrontEnd"
+import BackEndIcon from "../Icons/DevSkillIcons/BackEnd"
+import BusinessIcon from "../Icons/DevSkillIcons/Business"
 import SkillComponent from "../Skill"
 
 const DevSkills = () => {
