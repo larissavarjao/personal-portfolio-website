@@ -3,6 +3,24 @@ const menuBarCommon = [
   { label: "blog", path: "/blog" },
 ]
 
+const frontEndCommon = {
+  type: "frontend",
+  title: "Front-End",
+  languages: "Html, Css, Sass, Less, JavaScript, TypeScript",
+  frameworks: [
+    "ReactJs",
+    "Redux",
+    "Mobx",
+    "Webpack",
+    "Ruby On Rails",
+    "Gatsby",
+    "Bootstrap",
+    "Git",
+    "Github",
+    "Gitlab",
+  ],
+}
+
 export const textsMultiLanguage = {
   pt: {
     menuBar: [...menuBarCommon, { label: "currículo", path: "/resume" }],
@@ -18,6 +36,16 @@ export const textsMultiLanguage = {
         "e depois comecei a buscar também Back-End. Hoje, trabalho como FullStack Web, desenvolvendo" +
         " APIs e fazendo sites e dashboards dinâmicos e responsivos.",
     },
+    devskills: {
+      language: "Linguagens que domino: ",
+      data: [
+        {
+          ...frontEndCommon,
+          description:
+            "Como desenvolvedora front-end, adoro desenvolver coisas bonitas e dar contribuições nos projetos em que estou trabalhando.",
+        },
+      ],
+    },
   },
   en: {
     menuBar: [...menuBarCommon, { label: "resume", path: "/resume" }],
@@ -32,6 +60,16 @@ export const textsMultiLanguage = {
         " began to learn how to program and become more and more interested in IT. I first became Front-End" +
         " and then I started looking for Back-End as well. Today, I work at Cubos as FullStack Web, developing" +
         " APIs and making dynamic and responsive websites and dashboards.",
+    },
+    devskills: {
+      language: "Languages I know",
+      data: [
+        {
+          ...frontEndCommon,
+          description:
+            "As a front-end developer I love to code beautiful things and give inputs in the projects that I'm working on.",
+        },
+      ],
     },
   },
 }
