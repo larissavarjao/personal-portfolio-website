@@ -12,13 +12,31 @@ const frontEndCommon = {
     "Redux",
     "Mobx",
     "Webpack",
-    "Ruby On Rails",
-    "Gatsby",
     "Bootstrap",
     "Git",
     "Github",
     "Gitlab",
   ],
+}
+
+const backEndCommon = {
+  type: "backend",
+  title: "Back-End",
+  languages: "NodeJs, JavaScript, TypeScript, SQL",
+  frameworks: [
+    "Express",
+    "Postgres",
+    "MongoDB",
+    "RethinkDB",
+    "Jest",
+    "Git",
+    "Github",
+    "Gitlab",
+  ],
+}
+
+const businessCommon = {
+  type: "business",
 }
 
 export const textsMultiLanguage = {
@@ -44,6 +62,24 @@ export const textsMultiLanguage = {
           description:
             "Como desenvolvedora front-end, adoro desenvolver coisas bonitas e dar contribuições nos projetos em que estou trabalhando.",
         },
+        {
+          ...backEndCommon,
+          description:
+            "Como desenvolvedora back-end, adoro desenvolver api's performaticas, pensando em estrutura de dados e algoritmos.",
+        },
+        {
+          ...businessCommon,
+          title: "Administração",
+          languages: "Boa Comunicação, Proatividade, Inglês Avançado e Empatia",
+          frameworks: [
+            "Office",
+            "Contabilidade",
+            "Auditoria",
+            "Administração Financeira",
+          ],
+          description:
+            "Como administradora, adoro desenvolver projetos no prazo, que possuam boa qualidade, cumprindo os objetivos propostos.",
+        },
       ],
     },
   },
@@ -68,6 +104,20 @@ export const textsMultiLanguage = {
           ...frontEndCommon,
           description:
             "As a front-end developer I love to code beautiful things and give inputs in the projects that I'm working on.",
+        },
+        {
+          ...backEndCommon,
+          description:
+            "As a back-end developer, I love to develop performance api's, thinking about data structure and algorithms.",
+        },
+        {
+          ...businessCommon,
+          title: "Business",
+          languages:
+            "Good Communication, Proactivity, Advanced English and Empathy",
+          frameworks: ["Office", "Accounting", "Audit", "Finance"],
+          description:
+            "As an administrator, I love to develop projects on time, which have good quality, fulfilling the proposed objectives.",
         },
       ],
     },
