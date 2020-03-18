@@ -3,17 +3,21 @@ import {
   GlobalDispatchContext,
   GlobalStateContext,
 } from "../../context/GlobalContextProvider"
+import { textsMultiLanguage } from "../../utils/language"
 import BrazilFlag from "../Icons/BrazilFlag"
+import Email from "../Icons/SocialMedia/Email"
+import Github from "../Icons/SocialMedia/Github"
+import Linkedin from "../Icons/SocialMedia/Linkedin"
 import UsaFlag from "../Icons/UsaFlag"
-import Logo from "../Logo"
 import {
   HeaderLayout,
+  LanguagesWrapper,
   LanguageWrapper,
-  LogoLink,
+  MediaWrapper,
   MenuOptions,
   NavLink,
+  ExternalNavLink,
 } from "./style.js"
-import { textsMultiLanguage } from "../../utils/language"
 
 const Header = () => {
   const dispatch = useContext(GlobalDispatchContext)
@@ -21,19 +25,12 @@ const Header = () => {
 
   return (
     <HeaderLayout>
-      <LogoLink to="/">
-        <Logo />
-      </LogoLink>
-      <MenuOptions>
-        {textsMultiLanguage[state.language].menuBar.map(menuOption => (
-          <NavLink
-            activeClassName="active"
-            to={menuOption.path}
-            key={menuOption.path}
-          >
-            {menuOption.label}
-          </NavLink>
-        ))}
+      <MediaWrapper>
+        <Linkedin />
+        <Github />
+        <Email />
+      </MediaWrapper>
+      <LanguagesWrapper>
         <LanguageWrapper
           activate={state.language === "pt"}
           onClick={() => dispatch({ type: "CHANGE_LANGUAGE_PT" })}
@@ -46,6 +43,31 @@ const Header = () => {
         >
           <UsaFlag />
         </LanguageWrapper>
+      </LanguagesWrapper>
+      <MenuOptions>
+        {textsMultiLanguage[state.language].menuBar.map(menuOption => {
+          if (menuOption.type === "resume") {
+            return (
+              <ExternalNavLink
+                href={menuOption.path}
+                target="_blank"
+                key={menuOption.path}
+              >
+                {menuOption.label}
+              </ExternalNavLink>
+            )
+          }
+
+          return (
+            <NavLink
+              activeClassName="active"
+              to={menuOption.path}
+              key={menuOption.path}
+            >
+              {menuOption.label}
+            </NavLink>
+          )
+        })}
       </MenuOptions>
     </HeaderLayout>
   )

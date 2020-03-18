@@ -10,11 +10,12 @@ export const HeaderLayout = styled.header`
   align-items: center;
   position: absolute;
   top: 0;
+  flex-wrap: wrap;
   min-height: 64px;
   width: 100vw;
 
-  ${media.greaterThan("large")`
-    padding: 1rem 2rem;
+  ${media.greaterThan("medium")`
+    padding: 0 2rem;
     justify-content: space-between;
     width: calc(100vw - 4rem);
   `}
@@ -52,6 +53,34 @@ export const NavLink = styled(Link)`
   `}
 `
 
+export const ExternalNavLink = styled.a`
+  color: rgba(10, 10, 10, 0.9);
+  margin: 0 12px;
+  text-decoration: none;
+  transition: color 250ms;
+  font-size: 13px;
+
+  &::after {
+    display: block;
+    content: "";
+    border-bottom: 2px solid var(--pink);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &:hover {
+    color: var(--pink);
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
+
+  ${media.greaterThan("medium")`
+    font-size: 15px;
+  `}
+`
+
 export const LanguageWrapper = styled.div`
   margin: 8px;
   cursor: pointer;
@@ -64,10 +93,16 @@ export const MenuOptions = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 14px;
+
+  ${media.greaterThan("medium")`
+    margin: 0;
+  `}
 `
 
-export const LogoLink = styled(NavLink)`
-  ${media.lessThan("medium")`
-    display: none;
-  `}
+export const LanguagesWrapper = styled.div`
+  display: flex;
+`
+export const MediaWrapper = styled.div`
+  display: flex;
 `
