@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
 
 html {
@@ -20,3 +23,6 @@ body {
   --white: #ffffff;
   --gray: #e6ecf8;
 }
+`
+
+export default GlobalStyle
