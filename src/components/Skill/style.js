@@ -15,6 +15,7 @@ export const SkillLanguageTitle = styled.h3`
   color: var(--pink);
   font-size: 1.3rem;
   font-weight: 500;
+  text-align: center;
 `
 
 export const SkillItem = styled.p`

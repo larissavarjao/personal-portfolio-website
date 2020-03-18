@@ -3,7 +3,7 @@ import media from "styled-media-query"
 
 export const DevSkillsWrapper = styled.section`
   margin-top: -12rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;

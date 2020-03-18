@@ -1,12 +1,12 @@
-import styled from "styled-components"
 import { Link } from "gatsby"
+import styled from "styled-components"
 import media from "styled-media-query"
 
 export const HeaderLayout = styled.header`
   background: transparent;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   top: 0;

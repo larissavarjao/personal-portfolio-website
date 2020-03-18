@@ -2,12 +2,13 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const CoverWrapper = styled.section`
-  width: 100vw;
+  width: calc(100vw - 1rem);
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0.5rem;
 `
 
 export const Introduction = styled.h2`
@@ -48,4 +49,5 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 `

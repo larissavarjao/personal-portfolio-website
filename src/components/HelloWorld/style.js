@@ -12,7 +12,7 @@ export const HelloWorldWrapper = styled.section`
 
 export const HelloWorldTitle = styled.h2`
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 500;
   text-align: center;
   color: var(--white);
 
@@ -23,7 +23,7 @@ export const HelloWorldTitle = styled.h2`
 
 export const HelloWorldText = styled.p`
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
   text-align: center;
   color: var(--white);

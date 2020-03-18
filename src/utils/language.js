@@ -1,6 +1,6 @@
 const menuBarCommon = [
   { label: "home", path: "/" },
-  { label: "blog", path: "/blog" },
+  // { label: "blog", path: "/blog" },
 ]
 
 const frontEndCommon = {
@@ -63,7 +63,7 @@ export const textsMultiLanguage = {
         " APIs e fazendo sites e dashboards dinâmicos e responsivos.",
     },
     devskills: {
-      language: "Linguagens que domino: ",
+      language: "Linguagens que domino",
       data: [
         {
           ...frontEndCommon,
