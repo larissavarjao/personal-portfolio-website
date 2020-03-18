@@ -1,14 +1,23 @@
-import React from "react"
-
+import React, { useContext } from "react"
 import Layout from "../components/Layout"
+import NotFound from "../components/Icons/NotFound"
 import SEO from "../components/SEO"
+import { GlobalStateContext } from "../context/GlobalContextProvider"
+import { NotFoundWrapper, TitleNotFound } from "../styles/404"
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+const NotFoundPage = () => {
+  const state = useContext(GlobalStateContext)
+  return (
+    <Layout>
+      <SEO title="404" />
+      <NotFoundWrapper>
+        <NotFound />
+        <TitleNotFound>
+          {state.language === "pt" ? "Página não encontrada" : "Not Found"}
+        </TitleNotFound>
+      </NotFoundWrapper>
+    </Layout>
+  )
+}
 
 export default NotFoundPage
