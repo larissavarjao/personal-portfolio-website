@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "10"
+cache: npm
+install:
+  - npm ci
+branches:
+  only:
+    - master
+script:
+  - npm run build
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token:
+    secure: fkNsD2C7S64LvHSvRnqqXrKV3iuh2AqBOgcm8OtY78LQfQRy3lZj4Zgi/ZtxKX3AmpWT0rzfcH72fRJLhQmTy4Xm4KWFmK5DrPE8DcsDYD6lN/c4JtUc9OGDpKuJT06aj64DS3fzqSsTXGGFn05dGYM3VpTBJQh2o3YYGKsFk2meoosrZgJq4qbM0T5CCa0qj+QFUoMEreZBfVWOceXHsXTWejYCv7PVYqPlRriV8SqVcocJzJaqg9hRmwJPflonBisehNQv3TQ4vlonAO09ZbS6Ab82ZWMg3P2V9Ph1Vzc24pOkOEl3M2C9veEaGxsj/4MAdPjuTWIZo3DDEszp9jAMiFC5cfGTtPIdGJDBhvX30a+PMtA9nv9cLaOCF3awG4CHzgzxRaIeN7DLE2J6yDFt+nEOP52FjJFrHHMxqvTp6OuIaJnGcPZeB5nOH0X7Vat5DUz9j6MMk8KTMylWtGkd5M/AU3/KfZcSF0twdHbDRUqRH0NsGA/X3iRtDtH4SIG+UriYrGQ5GsCgfznmt74LZq/bs/kJ9M6x+uWmFsMt4s5cuy3ZxE2+StpHV1oaGYnLRzI7TaY7v6QWjtWa3f2AYRVUYM9C5bibqqkeEFTVghAein14km+6/43VIw6wlEZhXsJlEMPTFY2DjD6y0u9t8K9iTPV8urzlOGxoBKs=
+  project: larissavarjao-8
