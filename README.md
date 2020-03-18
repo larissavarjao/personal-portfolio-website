@@ -8,32 +8,38 @@
   Personal Portfolio Larissa Varjão
 </h1>
 
-Kick off your project with gatsby default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Copy the project using git.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Use the Git CLI to copy the project into your computer
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    # copy the project
+    git clone git@github.com:larissavarjao/personal-portfolio-website.git
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
+    cd personal-portfolio-website/
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Using Technologies
+
+- Gatsby
+- GraphQL
+- React Hooks
+- Styled components
+- JavaScript
+- JSX
+- CSS
