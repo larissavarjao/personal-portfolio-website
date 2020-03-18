@@ -1,5 +1,5 @@
 const menuBarCommon = [
-  { label: "home", path: "/home" },
+  { label: "home", path: "/" },
   { label: "blog", path: "/blog" },
 ]
 
@@ -41,7 +41,15 @@ const businessCommon = {
 
 export const textsMultiLanguage = {
   pt: {
-    menuBar: [...menuBarCommon, { label: "currículo", path: "/resume" }],
+    menuBar: [
+      ...menuBarCommon,
+      {
+        label: "currículo",
+        path:
+          "https://docs.google.com/document/d/1n0fImX76CLCh6SgNt4pnljxx-K_cxeSSV1KIPJQBcJ0/edit?usp=sharing",
+        type: "resume",
+      },
+    ],
     cover: {
       subtitle: "Desenho e desenvolvo para web, e eu amo o que eu faço.",
     },
@@ -84,7 +92,15 @@ export const textsMultiLanguage = {
     },
   },
   en: {
-    menuBar: [...menuBarCommon, { label: "resume", path: "/resume" }],
+    menuBar: [
+      ...menuBarCommon,
+      {
+        label: "resume",
+        path:
+          "https://docs.google.com/document/d/1ODvD73ZIwIePGWtTthpgBk8MeX0sbZzstOIhCPfZy7c/edit?usp=sharing",
+        type: "resume",
+      },
+    ],
     cover: {
       subtitle: "Design and code for web, and I love what I do.",
     },
