@@ -105,7 +105,7 @@ export const textsMultiLanguage = {
       subtitle: "Design and code for web, and I love what I do.",
     },
     helloworld: {
-      title: "Hello, world! Nice to meet you, I'm Larissa!",
+      title: "Hello, world! Nice to meet you, I'm Larissa! :)",
       text:
         "When I was finishing my bachelor degree in Business Administration, I realize that I " +
         "would finish without really identifying myself with what I was doing. It was at that moment that I" +
