@@ -46,7 +46,7 @@ export const textsMultiLanguage = {
       {
         label: "currículo",
         path:
-          "https://docs.google.com/document/d/1n0fImX76CLCh6SgNt4pnljxx-K_cxeSSV1KIPJQBcJ0/edit?usp=sharing",
+          "https://drive.google.com/file/d/1mL103J8A10YiEx4P4a5ho2S_Pn-xQUTK/view?usp=sharing",
         type: "resume",
       },
     ],
@@ -97,7 +97,7 @@ export const textsMultiLanguage = {
       {
         label: "resume",
         path:
-          "https://docs.google.com/document/d/1ODvD73ZIwIePGWtTthpgBk8MeX0sbZzstOIhCPfZy7c/edit?usp=sharing",
+          "https://drive.google.com/file/d/164QkWCZHSPtfb_qEB2qN_iWWkc69fhtk/view?usp=sharing",
         type: "resume",
       },
     ],
@@ -110,7 +110,7 @@ export const textsMultiLanguage = {
         "When I was finishing my bachelor degree in Business Administration, I realize that I " +
         "would finish without really identifying myself with what I was doing. It was at that moment that I" +
         " began to learn how to program and become more and more interested in IT. I first became Front-End" +
-        " and then I started looking for Back-End as well. Today, I work at Cubos as FullStack Web, developing" +
+        " and then I started looking for Back-End as well. Today, I work as FullStack Web, developing" +
         " APIs and making dynamic and responsive websites and dashboards.",
     },
     devskills: {
