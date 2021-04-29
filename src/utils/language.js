@@ -46,7 +46,7 @@ export const textsMultiLanguage = {
       {
         label: "currículo",
         path:
-          "https://drive.google.com/file/d/1mL103J8A10YiEx4P4a5ho2S_Pn-xQUTK/view?usp=sharing",
+          "https://drive.google.com/file/d/1WBLgXCRkbdaCpoAj0VbD4BE82KmnAFPh/view?usp=sharing",
         type: "resume",
       },
     ],
@@ -97,7 +97,7 @@ export const textsMultiLanguage = {
       {
         label: "resume",
         path:
-          "https://drive.google.com/file/d/164QkWCZHSPtfb_qEB2qN_iWWkc69fhtk/view?usp=sharing",
+          "https://drive.google.com/file/d/13n136KhziyEWpy_3s0UhyTlUauB3AzD1/view?usp=sharing",
         type: "resume",
       },
     ],
